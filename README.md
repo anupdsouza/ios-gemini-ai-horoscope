@@ -1,0 +1,1 @@
+# ios-gemini-ai-horoscope
