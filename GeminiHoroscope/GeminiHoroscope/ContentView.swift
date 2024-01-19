@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import GoogleGenerativeAI
 
 struct ContentView: View {
     @State private var showingSigns = false
@@ -14,8 +15,9 @@ struct ContentView: View {
     @State private var fetchingHoroscope = false
     @State private var currentSign: ZodiacSigns = .aquarius
     @State private var currentStyle: HoroscopeStyle = .original
-    @State private var horoscope: Horoscope?
+    @State private var horoscope = ""
     @Namespace private var namespace
+    let model = GenerativeModel(name: "gemini-pro", apiKey: APIKey.default)
 
     var body: some View {
         ZStack {
@@ -91,14 +93,12 @@ struct ContentView: View {
 
     // MARK: Zodiac horoscope
     @ViewBuilder private func zodiacSignHoroscopeView() -> some View {
-        if let horoscope = horoscope?.horoscope_data {
-            ScrollView(.vertical) {
-                Text(horoscope)
-                    .font(.title3)
-                    .foregroundStyle(.white)
-                    .multilineTextAlignment(.center)
-                    .padding(.all, 10)
-            }
+        ScrollView(.vertical) {
+            Text(horoscope)
+                .font(.title3)
+                .foregroundStyle(.white)
+                .multilineTextAlignment(.center)
+                .padding(.all, 10)
         }
     }
 
@@ -171,10 +171,21 @@ struct ContentView: View {
             let url = URL(string: "https://horoscope-app-api.vercel.app/api/v1/get-horoscope/daily?sign=\(currentSign.rawValue)&day=today")!
             let (data, _) = try await URLSession.shared.data(from: url, delegate: nil)
             let horoscopeResponse = try JSONDecoder().decode(HoroscopeResponse.self, from: data)
-            fetchingHoroscope = false
-            // TODO: If horoscope style != original, request gemini for summary with tonal style
+
+            if currentStyle != .original {
+                let prompt = "Summarize the following horoscope with a \(currentStyle.rawValue) tone:\n " + horoscopeResponse.data.horoscope_data
+                let response = try await model.generateContent(prompt)
+                fetchingHoroscope = false
+                guard let text = response.text else  {
+                    return
+                }
+                horoscope = text
+            } else {
+                fetchingHoroscope = false
+                horoscope = horoscopeResponse.data.horoscope_data
+            }
+            
             await MainActor.run {
-                self.horoscope = horoscopeResponse.data
                 withAnimation {
                     showHoroscope = true
                 }

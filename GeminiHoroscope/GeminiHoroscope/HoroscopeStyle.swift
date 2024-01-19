@@ -14,6 +14,7 @@ enum HoroscopeStyle: String, CaseIterable {
     case humorous
     case serious
     case enthusiastic
+    case pessimistic
     case empathetic
     case assertive
     case passive
