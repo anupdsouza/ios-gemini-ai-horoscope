@@ -154,10 +154,12 @@ struct ContentView: View {
         })
     }
     
+    // MARK: Set sign
     private func selectedSign(_ sign: ZodiacSigns) {
         currentSign = sign
     }
     
+    // MARK: Set style
     private func selectedStyle(_ style: HoroscopeStyle) {
         currentStyle = style
     }

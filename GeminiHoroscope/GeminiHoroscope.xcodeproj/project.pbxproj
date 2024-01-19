@@ -14,6 +14,9 @@
 		E4A8D3F12B5A355500D91491 /* ZodiacSigns.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8D3F02B5A355500D91491 /* ZodiacSigns.swift */; };
 		E4A8D3F32B5A3ED800D91491 /* HoroscopeStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8D3F22B5A3ED800D91491 /* HoroscopeStyle.swift */; };
 		E4A8D3F52B5A62D800D91491 /* Horoscope.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8D3F42B5A62D800D91491 /* Horoscope.swift */; };
+		E4A8D3F82B5A76E800D91491 /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = E4A8D3F72B5A76E800D91491 /* GoogleGenerativeAI */; };
+		E4A8D3FC2B5A770200D91491 /* GenerativeAI-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4A8D3FA2B5A770200D91491 /* GenerativeAI-Info.plist */; };
+		E4A8D3FD2B5A770200D91491 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8D3FB2B5A770200D91491 /* APIKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,8 @@
 		E4A8D3F02B5A355500D91491 /* ZodiacSigns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZodiacSigns.swift; sourceTree = "<group>"; };
 		E4A8D3F22B5A3ED800D91491 /* HoroscopeStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeStyle.swift; sourceTree = "<group>"; };
 		E4A8D3F42B5A62D800D91491 /* Horoscope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Horoscope.swift; sourceTree = "<group>"; };
+		E4A8D3FA2B5A770200D91491 /* GenerativeAI-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GenerativeAI-Info.plist"; sourceTree = "<group>"; };
+		E4A8D3FB2B5A770200D91491 /* APIKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4A8D3F82B5A76E800D91491 /* GoogleGenerativeAI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +68,7 @@
 				E4A8D3F02B5A355500D91491 /* ZodiacSigns.swift */,
 				E4A8D3F22B5A3ED800D91491 /* HoroscopeStyle.swift */,
 				E4A8D3F42B5A62D800D91491 /* Horoscope.swift */,
+				E4A8D3F92B5A770200D91491 /* Config */,
 				E466F5D32B59139D0054E29A /* Assets.xcassets */,
 				E466F5D52B59139D0054E29A /* Preview Content */,
 			);
@@ -74,6 +81,15 @@
 				E466F5D62B59139D0054E29A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E4A8D3F92B5A770200D91491 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				E4A8D3FA2B5A770200D91491 /* GenerativeAI-Info.plist */,
+				E4A8D3FB2B5A770200D91491 /* APIKey.swift */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,6 +108,9 @@
 			dependencies = (
 			);
 			name = GeminiHoroscope;
+			packageProductDependencies = (
+				E4A8D3F72B5A76E800D91491 /* GoogleGenerativeAI */,
+			);
 			productName = GeminiHoroscope;
 			productReference = E466F5CC2B59139B0054E29A /* GeminiHoroscope.app */;
 			productType = "com.apple.product-type.application";
@@ -120,6 +139,9 @@
 				Base,
 			);
 			mainGroup = E466F5C32B59139B0054E29A;
+			packageReferences = (
+				E4A8D3F62B5A76E800D91491 /* XCRemoteSwiftPackageReference "generative-ai-swift" */,
+			);
 			productRefGroup = E466F5CD2B59139B0054E29A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -136,6 +158,7 @@
 			files = (
 				E466F5D72B59139D0054E29A /* Preview Assets.xcassets in Resources */,
 				E466F5D42B59139D0054E29A /* Assets.xcassets in Resources */,
+				E4A8D3FC2B5A770200D91491 /* GenerativeAI-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +173,7 @@
 				E4A8D3F12B5A355500D91491 /* ZodiacSigns.swift in Sources */,
 				E4A8D3F32B5A3ED800D91491 /* HoroscopeStyle.swift in Sources */,
 				E4A8D3F52B5A62D800D91491 /* Horoscope.swift in Sources */,
+				E4A8D3FD2B5A770200D91491 /* APIKey.swift in Sources */,
 				E466F5D02B59139B0054E29A /* GeminiHoroscopeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,6 +378,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E4A8D3F62B5A76E800D91491 /* XCRemoteSwiftPackageReference "generative-ai-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/generative-ai-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E4A8D3F72B5A76E800D91491 /* GoogleGenerativeAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E4A8D3F62B5A76E800D91491 /* XCRemoteSwiftPackageReference "generative-ai-swift" */;
+			productName = GoogleGenerativeAI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E466F5C42B59139B0054E29A /* Project object */;
 }
