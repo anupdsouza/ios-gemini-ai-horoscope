@@ -13,6 +13,7 @@
 		E466F5D72B59139D0054E29A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E466F5D62B59139D0054E29A /* Preview Assets.xcassets */; };
 		E4A8D3F12B5A355500D91491 /* ZodiacSigns.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8D3F02B5A355500D91491 /* ZodiacSigns.swift */; };
 		E4A8D3F32B5A3ED800D91491 /* HoroscopeStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8D3F22B5A3ED800D91491 /* HoroscopeStyle.swift */; };
+		E4A8D3F52B5A62D800D91491 /* Horoscope.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8D3F42B5A62D800D91491 /* Horoscope.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		E466F5D62B59139D0054E29A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E4A8D3F02B5A355500D91491 /* ZodiacSigns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZodiacSigns.swift; sourceTree = "<group>"; };
 		E4A8D3F22B5A3ED800D91491 /* HoroscopeStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeStyle.swift; sourceTree = "<group>"; };
+		E4A8D3F42B5A62D800D91491 /* Horoscope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Horoscope.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				E466F5D12B59139B0054E29A /* ContentView.swift */,
 				E4A8D3F02B5A355500D91491 /* ZodiacSigns.swift */,
 				E4A8D3F22B5A3ED800D91491 /* HoroscopeStyle.swift */,
+				E4A8D3F42B5A62D800D91491 /* Horoscope.swift */,
 				E466F5D32B59139D0054E29A /* Assets.xcassets */,
 				E466F5D52B59139D0054E29A /* Preview Content */,
 			);
@@ -146,6 +149,7 @@
 				E466F5D22B59139B0054E29A /* ContentView.swift in Sources */,
 				E4A8D3F12B5A355500D91491 /* ZodiacSigns.swift in Sources */,
 				E4A8D3F32B5A3ED800D91491 /* HoroscopeStyle.swift in Sources */,
+				E4A8D3F52B5A62D800D91491 /* Horoscope.swift in Sources */,
 				E466F5D02B59139B0054E29A /* GeminiHoroscopeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
