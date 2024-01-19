@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 struct Horoscope: Codable {
     let date: String
     let horoscope_data: String
