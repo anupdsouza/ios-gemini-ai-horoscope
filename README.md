@@ -2,8 +2,8 @@
 ---
 # Horoscope app with SwiftUI & Gemini AI
 
-An app that displays the daily horoscope for the selected Zodiac sign and summarizing it via prompts & tonal styles for a creative reading.
-API: https://horoscope-app-api.vercel.app/ by Ashutosh Krishna
+An app that displays the daily horoscope for the selected Zodiac sign and summarizes it via prompts & tonal styles for a creative reading.
+API: https://horoscope-app-api.vercel.app/ by [Ashutosh Krishna](https://github.com/ashutoshkrris)
 
 # Youtube video:
 https://youtu.be/bxiP1J4-V8w
