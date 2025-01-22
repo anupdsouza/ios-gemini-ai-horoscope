@@ -3,7 +3,7 @@ An app that displays the daily horoscope for the selected Zodiac sign and summar
 API: https://horoscope-app-api.vercel.app/ by [Ashutosh Krishna](https://github.com/ashutoshkrris)
 
 Star the Repo if you found this useful: <picture><img align="center" alt="startherepo" src="https://github.com/anupdsouza/ios-miscellaneous/blob/bf5cb23d0ffbb21afa7b442540a7682df27c3b12/starrepo.gif" height="50" hspace="5"></picture><br/>
-Support Me: <a href="https://www.buymeacoffee.com/adsouza"><img align="center" alt="buymeacoffee" src="https://github.com/anupdsouza/ios-miscellaneous/blob/bf5cb23d0ffbb21afa7b442540a7682df27c3b12/bmc.png" height="30" hspace="5"></a> <a href="https://www.youtube.com/@swiftodyssey"><img align="center" alt="youtube" src="https://github.com/anupdsouza/ios-miscellaneous/blob/bf5cb23d0ffbb21afa7b442540a7682df27c3b12/subscribe.png" height="30" hspace="5"></a>
+Support Me: <a href="https://www.buymeacoffee.com/adsouza"><img align="center" alt="buymeacoffee" src="https://github.com/anupdsouza/ios-miscellaneous/blob/bf5cb23d0ffbb21afa7b442540a7682df27c3b12/bmc.png" height="30" hspace="5"></a> <a href="https://www.youtube.com/@areaswiftyone"><img align="center" alt="youtube" src="https://github.com/anupdsouza/ios-miscellaneous/blob/bf5cb23d0ffbb21afa7b442540a7682df27c3b12/subscribe.png" height="30" hspace="5"></a>
 
 ## Screenshots
 <img width="250" alt="Screenshot 2024-01-19 at 4 36 58 PM" src="https://github.com/anupdsouza/ios-gemini-ai-horoscope/assets/103429618/a8ecc773-a9ed-4685-8e6f-898bcb1a7025">
